@@ -17,6 +17,7 @@ body {
   background-color: rgb(153, 177, 255);  
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
+  padding-top: 20px;
 }
 
 main.container {
