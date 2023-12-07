@@ -1,5 +1,6 @@
 .pfpHead {
-  background-color: lightblue;
+  background-color: #318dbf;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
   height: 532.8px;
   width: 100%;
   display: flex;
@@ -13,7 +14,7 @@
 }
 
 .headName {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   margin-top: -15px;
 }
 

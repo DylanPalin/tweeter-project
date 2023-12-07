@@ -14,16 +14,15 @@ html {
  * Global layout stuff
  */
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  background-color: rgb(153, 177, 255);  
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
 }
 
 main.container {
-  width:100%;
+  background-color: rgb(153, 177, 255);  
+  width: 90%;
   margin: 50px auto 0 auto;
-  background-color: #f4d1ec;
   z-index: -1;
 }
 
