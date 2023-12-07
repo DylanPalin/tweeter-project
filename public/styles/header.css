@@ -1,0 +1,19 @@
+.pfpHead {
+  background-color: lightblue;
+  height: 532.8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pfpImg {
+  margin-top: 35px;
+}
+
+.headName {
+  margin-bottom: 25px;
+  margin-top: -15px;
+}
+
