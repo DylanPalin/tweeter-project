@@ -42,7 +42,10 @@
     <script src="https://kit.fontawesome.com/a8253bf4b0.js" crossorigin="anonymous"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/scripts/composer-char-counter.js"></script>
+    <script src="/scripts/client.js"></script>
+    <script src="/scripts/timeago.js"></script>
   </head>
 
 
@@ -79,44 +82,22 @@
     <main class="container">
 
       <section class="new-tweet">
-        <form>
+        <form id="publish" class="publish">
           <textarea name="text" id="textarea" placeholder="What are you humming about?"></textarea>
           <div>
-            <button type="submit">Tweet</button>
+            <button id="tweetButton" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-<br>
-      <section class="tweetFeed">
-        <article>
-          <header class="userThumbs">
-              <img class="pfpThumb" src="/images/profile-hex.png"></img>
-              <h3>Dylan Palin</h3>
-              <h4>@dylanpalin</h4>
-          </header>
 
-          <div class="tweetContent">
-            <p class="userTweet">This is a reeeaaaaaalllllyyyy long tweet!</p>
-          </div>
+      <br>
 
-          <footer class="navIcons">
-            <p>10 days ago</p>
-            <div class="icons">
-              <button class="flagButton">
-              <i class="fa-solid fa-flag"></i>
-              <button class="retweetButton">
-              <i class="fa-solid fa-retweet"></i>
-              <button class="likeButton">
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </footer>
-        </article>
+      <section class="tweet-container">
+
 
       </section>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/scripts/composer-char-counter.js"></script>
 
   </body>
 
