@@ -11,17 +11,18 @@ form div {
   width: 100%;
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
-  margin-top: 15px; 
+  margin-top: 15px;
+  margin-bottom: 15px; 
 }
 
 form textarea {
   border: none;
-  border-bottom: 2px solid #00000050;
+  border-bottom: 3px solid #00000050;
   outline: none;
   background: transparent;
   font-weight: bold;
   padding: 0;
-  line-height: .75;
+  line-height: .85;
 }
 
 form div button { 
@@ -30,5 +31,9 @@ form div button {
   color: white;
   padding: 6px 12px;
 
+}
+
+.over-limit {
+  color: red;
 }
 

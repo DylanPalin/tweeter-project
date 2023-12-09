@@ -30,9 +30,14 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <!-- New Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- Feed CSS -->
+    <link rel="stylesheet" href="/styles/feed.css" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script src="https://kit.fontawesome.com/a8253bf4b0.js" crossorigin="anonymous"></script>
 
@@ -75,15 +80,44 @@
 
       <section class="new-tweet">
         <form>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <textarea name="text" id="textarea" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-      
+<br>
+      <section class="tweetFeed">
+        <article>
+          <header class="userThumbs">
+              <img class="pfpThumb" src="/images/profile-hex.png"></img>
+              <h3>Dylan Palin</h3>
+              <h4>@dylanpalin</h4>
+          </header>
+
+          <div class="tweetContent">
+            <p class="userTweet">This is a reeeaaaaaalllllyyyy long tweet!</p>
+          </div>
+
+          <footer class="navIcons">
+            <p>10 days ago</p>
+            <div class="icons">
+              <button class="flagButton">
+              <i class="fa-solid fa-flag"></i>
+              <button class="retweetButton">
+              <i class="fa-solid fa-retweet"></i>
+              <button class="likeButton">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+
+      </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/scripts/composer-char-counter.js"></script>
+
   </body>
 
 </html>
