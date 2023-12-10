@@ -2,17 +2,17 @@
 form {
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 38px;
 }
 
 form div {
   display: flex;
-  height: 40px;
+  height: 50%;
   width: 100%;
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
-  margin-top: 15px;
-  margin-bottom: 15px; 
+  margin-top: 20px;
+  margin-bottom: 2px; 
 }
 
 form textarea {
@@ -37,3 +37,9 @@ form div button {
   color: red;
 }
 
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

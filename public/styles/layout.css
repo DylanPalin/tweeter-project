@@ -3,7 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -13,17 +13,25 @@ html {
 /*
  * Global layout stuff
  */
-body {
+ body {
   background-color: rgb(153, 177, 255);  
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
-  padding-top: 20px;
+  display: flex;
+  margin-top: 7%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.8em;
+  align-items: center;
+  z-index: -2;
 }
 
 main.container {
   background-color: rgb(153, 177, 255);  
-  width: 90%;
+  display: flex;
+
   margin: 50px auto 0 auto;
+  padding: 3%;
   z-index: -1;
 }
 
@@ -36,3 +44,25 @@ main.container {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ 
+ @media only screen and (min-width: 1024px) {
+  
+  main.container {
+    display: flex;
+    width: 66%;
+    position: relative;
+    top: 180px;
+    padding: 0%;
+
+
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    margin-top: -1.3%;
+}
+ }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<charset="utf-8">
 
   <head>
     <!-- Meta Information -->
@@ -32,13 +31,12 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <!-- Feed CSS -->
     <link rel="stylesheet" href="/styles/feed.css" type="text/css" />
-
+    <!-- Footer CSS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
       integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- External JS -->
-
     <script src="https://kit.fontawesome.com/a8253bf4b0.js" crossorigin="anonymous"></script>
 
     <!-- App JS -->
@@ -46,9 +44,11 @@
     <script src="/scripts/composer-char-counter.js"></script>
     <script src="/scripts/client.js"></script>
     <script src="/scripts/timeago.js"></script>
+
+    <!-- Disable viewport zooming -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
   </head>
-
-
 
   <body>
 
@@ -57,7 +57,7 @@
       <h1>Tweeter</h1>
       <i class="fa-solid fa-bird"></i>
       <div class="flex" id="writeNew">
-        <p id="writeNew"><strong>Write</strong> a new tweet</p><i id="arrow" class="fa-solid fa-angles-down fa-spin"
+        <p id="writeNew"><strong>Write</strong> a new tweet</p><i id="arrow" class="fa-solid fa-angles-down fa-flip"
           style="color: #ff3535;"></i>
       </div>
     </nav>
@@ -66,6 +66,7 @@
     <!-- Header content -->
 
     <header class="pfpHead">
+      <section class="feature"
       <div class="pfpImg">
         <div>
           <img src="/images/profile-hex.png" alt="profile image" class="pagepadding">
@@ -94,8 +95,7 @@
       <br>
 
       <section class="tweet-container">
-
-
+        <p></p>
       </section>
     </main>
 

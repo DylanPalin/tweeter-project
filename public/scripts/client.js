@@ -3,8 +3,12 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
-
+// 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 // create tweet element from tweet data
 function createTweetElement(tweet) {
@@ -13,17 +17,17 @@ function createTweetElement(tweet) {
   const $tweet = `
       <article>
           <header class="userThumbs">
-            <img class="pfpThumb" src="${user.avatars}"></img>
-            <h3>${user.name}</h3>
-            <h4>${user.handle}</h4>
+            <img class="pfpThumb" src="${escape(user.avatars)}"></img>
+            <h3>${escape(user.name)}</h3>
+            <h4>${escape(user.handle)}</h4>
           </header>
 
           <div class="tweetContent">
-            <p class="userTweet">${content.text}</p>
+            <p class="userTweet">${escape(content.text)}</p>
           </div>
 
           <footer class="navIcons">
-            <p class="daysOld">${date}</div>
+            <p class="daysOld">${escape(date)}</div>
             <div class="icons">
               <button class="flagButton">
                 <i class="fa-solid fa-flag"></i>
@@ -35,7 +39,6 @@ function createTweetElement(tweet) {
           </footer>
         </article>
     `;
-
   return $tweet;
 }
 
@@ -53,11 +56,8 @@ $(document).ready(function (event) {
       .then(function (tweets) {
         renderTweets(tweets);
       })
-    };
-  loadTweets();    
-
-
-
+  };
+  loadTweets();
 
   $("form").submit(function (event) {
     event.preventDefault();
@@ -96,6 +96,6 @@ $(document).ready(function (event) {
 
           });
         })
-      }
-    });
+    }
+  });
 });
