@@ -38,7 +38,7 @@ nav .flex {
 @media only screen and (min-width: 1080px) {
   nav {
     display: flex;
-    flex-wrap: wrap;
+    position: absolute;
     z-index: 0;
     background-color: #4056A1;
     color: #FFFFFF;

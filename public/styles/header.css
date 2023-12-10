@@ -1,7 +1,7 @@
 .pfpHead {
   background-color: #318dbf;
   background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-  height: 532.8px;
+  height: 340px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -14,22 +14,53 @@
   display: flex;
   align-self: center;
   justify-content: center;
-  margin-top: -55px;
+  margin-top: -60px;
   margin-bottom: 6px;
+  z-index: 1;
+}
+
+.feature {
+  display: flex;
+  position: relative;
+    height: 250px;
+}
+
+div.pfpImg { 
+  scale: 72%;
 }
 
 
 @media only screen and (min-width: 1080px) {
-   
   .pfpHead {
-    height: 398px;
+    height: 375px;
     display: flex;
     float: left;
     width: 215%;
     align-items: center;
     z-index: -1;
-    margin-left: 36px;
-    margin-right: -29px;
-    max-width: 25%;
+    margin-left: 24px;
+    margin-right: -38px;
+    max-width: 25vw;
+
   }
+
+  .headName {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: -70px;
+    margin-bottom: 6px;
+    z-index: 1;
+  }
+
+  .feature {
+    display: flex;
+    position: relative;
+    height: 300px;
+  }
+
+  div.pfpImg { 
+    scale: 88%;
+  }
+  
 }
