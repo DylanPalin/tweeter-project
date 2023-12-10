@@ -1,6 +1,6 @@
 
 nav {
-  color: #4056A1;
+  color: white;
   font-family: 'Source Sans 3', sans-serif;
   height: 5em;
   display: flex;
@@ -9,7 +9,7 @@ nav {
   position: fixed;
   top: 0;
   padding: 0 1.5em;
-  z-index: 2;
+  z-index: 3;
 }
 
 nav h1 {
@@ -22,7 +22,7 @@ nav h1 {
 }
 
 nav .flex {
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
 }
@@ -44,4 +44,12 @@ nav .flex {
     color: #FFFFFF;
     width: 100%;
   }
+
+  nav .flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right:4px;
+  }
+
 }

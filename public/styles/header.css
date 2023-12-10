@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 2;
 }
 
 .headName {
@@ -22,14 +22,14 @@
 @media only screen and (min-width: 1080px) {
    
   .pfpHead {
-    height: 380px;
+    height: 398px;
     display: flex;
     float: left;
-    width: 180%;
+    width: 215%;
     align-items: center;
     z-index: -1;
-    margin-left: 6px;
-    margin-right: -25px;
+    margin-left: 36px;
+    margin-right: -29px;
     max-width: 25%;
   }
 }
