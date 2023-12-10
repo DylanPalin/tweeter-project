@@ -9,7 +9,7 @@ nav {
   position: fixed;
   top: 0;
   padding: 0 1.5em;
-  z-index: -1;
+  z-index: 2;
 }
 
 nav h1 {
@@ -35,7 +35,7 @@ nav .flex {
   margin-bottom: 19px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
   nav {
     display: flex;
     flex-wrap: wrap;
