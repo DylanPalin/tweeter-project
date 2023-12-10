@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 // 
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -50,6 +51,7 @@ const renderTweets = tweets => {
   }
 };
 
+  // validate and submit tweet when button is clicked
 $(document).ready(function (event) {
   const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
@@ -99,3 +101,13 @@ $(document).ready(function (event) {
     }
   });
 });
+
+// // toggle new tweet form
+// $(document).click('button', (event) {
+//   const loadTweets = function () {
+//     $.ajax('/tweets', { method: 'GET' })
+//       .then(function (tweets) {
+//         renderTweets(tweets);
+//       })
+//   };
+//   loadTweets();
