@@ -43,6 +43,8 @@ function createTweetElement(tweet) {
   return $tweet;
 }
 
+
+
 // loop through tweets and call above function to render them on index
 const renderTweets = tweets => {
   const existingTweets = $('.tweet-container');
@@ -51,7 +53,19 @@ const renderTweets = tweets => {
   }
 };
 
-  // validate and submit tweet when button is clicked
+$(document).ready('writeNew', (event) => {
+  const newTweetPanel = () => {
+    if ($('.new-tweet').is(':hidden')) {
+      $('.new-tweet').slideDown('slow');
+      $('#textarea').focus();
+    } else {
+      $('.new-tweet').slideUp('slow');
+    }
+  }
+});
+
+
+// validate and submit tweet when button is clicked
 $(document).ready(function (event) {
   const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
@@ -102,12 +116,3 @@ $(document).ready(function (event) {
   });
 });
 
-// // toggle new tweet form
-// $(document).click('button', (event) {
-//   const loadTweets = function () {
-//     $.ajax('/tweets', { method: 'GET' })
-//       .then(function (tweets) {
-//         renderTweets(tweets);
-//       })
-//   };
-//   loadTweets();

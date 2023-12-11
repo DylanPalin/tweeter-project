@@ -15,7 +15,7 @@
   display: flex;
   align-self: center;
   justify-content: center;
-  margin-top: -2.1em;  
+  margin-top: -2.1em;
   margin-bottom: -2.1em;
   z-index: 1;
 }
@@ -42,10 +42,10 @@ html body header.pfpHead div#writeNewMobile.flex i#arrow.fa-solid.fa-angles-down
 .feature {
   display: flex;
   position: relative;
-    height: 250px;
+  height: 250px;
 }
 
-div.pfpImg { 
+div.pfpImg {
   scale: 66%;
   margin-top: 2.3vh;
 }
@@ -79,11 +79,12 @@ div.pfpImg {
     position: relative;
     height: 300px;
   }
-  
+
   div.headName {
     font-size: 1em;
   }
 
   div#writeNewMobile.flex {
-  display: none;
+    display: none;
+  }
 }

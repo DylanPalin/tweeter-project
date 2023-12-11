@@ -1,4 +1,3 @@
-
 nav {
   color: white;
   font-family: 'Source Sans 3', sans-serif;
@@ -44,18 +43,18 @@ nav .flex {
     color: #FFFFFF;
     width: 100%;
   }
-  
+
   nav h1 {
-  font-size: 44px;
-  margin-bottom: 25px;
-}
-  
+    font-size: 44px;
+    margin-bottom: 25px;
+  }
+
 
   nav .flex {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right:4px;
+    margin-right: 4px;
   }
 
 }
