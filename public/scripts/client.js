@@ -53,16 +53,21 @@ const renderTweets = tweets => {
   }
 };
 
-$(document).ready('writeNew', (event) => {
-  const newTweetPanel = () => {
-    if ($('.new-tweet').is(':hidden')) {
-      $('.new-tweet').slideDown('slow');
-      $('#textarea').focus();
-    } else {
-      $('.new-tweet').slideUp('slow');
-    }
-  }
+$("#writeNew").click(function () {
+  $(this).hide();
 });
+
+
+// $(document).ready('writeNew', (event) => {
+//   const newTweetPanel = () => {
+//     if ($('.new-tweet').is(':hidden')) {
+//       $('.new-tweet').slideDown('slow');
+//       $('#textarea').focus();
+//     } else {
+//       $('.new-tweet').slideUp('slow');
+//     }
+//   }
+// });
 
 
 // validate and submit tweet when button is clicked

@@ -7,8 +7,8 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  padding: 0 1.5em;
-  z-index: 3;
+  padding: 0 1.45em;
+  z-index: 1;
 }
 
 nav h1 {

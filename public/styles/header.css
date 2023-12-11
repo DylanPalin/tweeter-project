@@ -8,16 +8,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  z-index: 2;
+  z-index: 0;
 }
 
 .headName {
   display: flex;
   align-self: center;
   justify-content: center;
-  margin-top: -2.1em;
+  margin-top: -2.2em;
   margin-bottom: -2.1em;
-  z-index: 1;
+  z-index: 0;
 }
 
 div.headName {
@@ -47,18 +47,21 @@ html body header.pfpHead div#writeNewMobile.flex i#arrow.fa-solid.fa-angles-down
 
 div.pfpImg {
   scale: 66%;
-  margin-top: 2.3vh;
+  margin-top: 2.4vh;
 }
 
 
 @media only screen and (min-width: 1080px) {
   .pfpHead {
-    height: 325px;
+    height: 250px;
     display: flex;
     float: left;
+    flex-direction: column;
+    justify-content: center;
     width: 215%;
     align-items: center;
-    z-index: -1;
+    z-index: 0;
+    margin-top: 180px;
     margin-left: 24px;
     margin-right: -38px;
     max-width: 25vw;
@@ -69,9 +72,9 @@ div.pfpImg {
     display: flex;
     align-self: center;
     justify-content: center;
-    margin-top: -70px;
+    margin-top: -80px;
     margin-bottom: 0vh;
-    z-index: 1;
+    z-index: 0;
   }
 
   .feature {
@@ -82,6 +85,7 @@ div.pfpImg {
 
   div.headName {
     font-size: 1em;
+    margin-bottom: 10px;
   }
 
   div#writeNewMobile.flex {
