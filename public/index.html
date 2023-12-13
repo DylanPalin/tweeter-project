@@ -44,11 +44,14 @@
   <script src="/scripts/composer-char-counter.js"></script>
   <script src="/scripts/client.js"></script>
   <script src="/scripts/timeago.js"></script>
+  <script src="scripts/scroll.js"></script>
 
   <!-- Disable viewport zooming -->
-
-
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
+
+<!--Scroll to top button-->
+<a name="top"></a>
 
 <body>
 
@@ -57,7 +60,8 @@
     <h1>Tweeter</h1>
     <i class="fa-solid fa-bird"></i>
     <div class="flex" id="writeNew">
-      <p id="writeNew"><strong>Write</strong> a new tweet</p><i id="arrow" class="fa-solid fa-angles-down fa-flip"
+      <p id="writeNew"><strong>Write</strong> a new tweet</p>
+      <i id="arrow" class="fa-solid fa-angles-down"
         style="color: #ff3535;"></i>
     </div>
   </nav>
@@ -75,16 +79,11 @@
     <div class="headName">
       <h2>Dylan Palin</h2>
     </div>
-    <div id="writeNewMobile" class="flex">
-      <p id="writeNewMobile" class="flex"><strong>Write</strong> a new tweet</p><i id="arrow"
-        class="fa-solid fa-angles-down fa-flip" style="color: #ff3535;"></i>
-    </div>
   </header>
 
   <!-- Page-specific (main) content here -->
 
   <main class="container">
-
     <section class="new-tweet">
       <form id="publish" class="publish">
         <textarea name="text" id="textarea" placeholder="What are you humming about?"></textarea>

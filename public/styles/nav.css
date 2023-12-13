@@ -3,9 +3,10 @@ nav {
   font-family: 'Source Sans 3', sans-serif;
   height: 5em;
   display: flex;
-  align-items: end;
+  flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
+  width: 100%;
   top: 0;
   padding: 0 1.45em;
   z-index: 1;
@@ -20,41 +21,60 @@ nav h1 {
   margin-bottom: 44px;
 }
 
-nav .flex {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-}
-
 #writeNew p {
   margin-bottom: 6px;
 }
 
 #arrow {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
+}
+
+div#writeNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 1080px) {
+
   nav {
     display: flex;
+    flex-direction: row;
     position: absolute;
     z-index: 0;
     background-color: #4056A1;
     color: #FFFFFF;
     width: 100%;
+    top: 0;
+    padding: 0 1.45em;
+    z-index: 1;
   }
 
   nav h1 {
     font-size: 44px;
     margin-bottom: 25px;
   }
+}
 
+@media only screen and (max-width: 810px) {
+  nav {
+    font-size: small
+  }
 
-  nav .flex {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 4px;
+  nav h1 {
+    font-size: 270%;
+    margin-bottom: 30px;
+  }
+
+  #arrow {
+    margin-top: -5px;
+  }
+
+  div#writeNew {
+    scale: 150%;
+    margin-top: 13px;
+    padding-right: 24px;
   }
 
 }

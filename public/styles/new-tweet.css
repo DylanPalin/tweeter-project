@@ -2,6 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   margin-bottom: 38px;
+  padding-top: 8px;
 }
 
 form div {
@@ -12,6 +13,7 @@ form div {
   font-family: "Bungee", sans-serif;
   margin-top: 20px;
   margin-bottom: 2px;
+  font-size: .6em;
 }
 
 form textarea {
@@ -20,8 +22,8 @@ form textarea {
   outline: none;
   background: transparent;
   font-weight: bold;
-  padding: 0;
-  line-height: .85;
+  padding: 5px;
+  line-height: 1;
 }
 
 form div button {
@@ -34,11 +36,7 @@ form div button {
 
 .over-limit {
   color: red;
-}
-
-p#errror { 
-  font-size: 1em;
-
+  font-size: 0.8em;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -47,4 +45,9 @@ p#errror {
     flex-direction: column;
     margin-top: 100px;
   }
+
+  form div {
+    font-size: .7em;
+  }
+
 }
